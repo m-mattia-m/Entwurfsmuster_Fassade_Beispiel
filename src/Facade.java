@@ -1,21 +1,31 @@
 public class Facade {
 	
-//	private String url;
-//	private String username;
-//	private String password;
-//	private boolean send;
+	public String firstName;
+	public String lastName;
+	public String age;
+	private String[][] users;
 	
-	public Facade(String url, String username, String password, boolean send) {
-		Subsystem s = new Subsystem();
-//		this.url = url;
-//		this.username = username;
-//		this.password = password;
-//		this.send = send;
+	Subsystem s = new Subsystem();
+	
+	public Facade() {
 		
-		s.enterURL(url);
-		s.enterUsername(username);
-		s.enterPassword(password);
-		s.send(true);
 	}
 	
+	public void getUser() {
+		System.out.println("content Facade get");
+		users = s.getUsers();
+		for(int i = 0; i < users.length; i++) {
+			System.out.println(users[i][0] + "\t | \t" + users[i][1] + "\t | \t" + users[i][2]);
+		}
+	}
+	
+	public void postUser(String firstName, String lastName, String age) {
+		s.addUsers(firstName, lastName, age);
+	}
+	
+	public void delUser(String id) {
+		System.out.println("content Facade Del");
+		s.delUsers(id);
+	}
+		
 }
