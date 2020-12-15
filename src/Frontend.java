@@ -4,9 +4,9 @@ public class Frontend {
 
 	public Frontend() {
 		
-		f.postUser("Mattia", "Mueggler", 17);
-		f.postUser("Michael", "Schaedler", 17);
-		f.postUser("Kay", "Wild", 17);
+		f.postUser("Max", "Mustermann", 17);
+		f.postUser("Max2", "Mustermann", 17);
+		f.postUser("Max3", "Mustermann", 17);
 		f.getUsers();
 
 	}
