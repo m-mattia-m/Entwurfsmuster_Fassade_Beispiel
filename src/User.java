@@ -18,7 +18,7 @@ public class User {
 	}
 	
 	public String toString() {
-		return "rückgabe";
+		return id + " " + firstName + " " + lastName + " " + age ;
 	}
 	
 }
