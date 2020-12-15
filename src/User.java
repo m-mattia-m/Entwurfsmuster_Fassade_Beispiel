@@ -18,7 +18,7 @@ public class User {
 	}
 	
 	public String toString() {
-		return id + " " + firstName + " " + lastName + " " + age ;
+		return " |\t" + id + "\t|\t" + firstName + "\t|\t" + lastName + "\t|\t" + age  + "\t|\t";
 	}
 	
 }

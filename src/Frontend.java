@@ -4,16 +4,19 @@ public class Frontend {
 
 	public Frontend() {
 		
-		f.postUser("Max", "Mustermann", 17);
-		f.postUser("Max2", "Mustermann", 17);
-		f.postUser("Max3", "Mustermann", 17);
+		f.postUser("Johannes1", "Mustermann", 17);
 		f.getUsers();
-		
-		/* Output:
-		* User@4517d9a3
-		* User@372f7a8d
-		* User@2f92e0f4
-		*/
+		f.postUser("Johannes2", "Mustermann", 17);
+		f.getUsers();
+		f.postUser("Johannes3", "Mustermann", 17);
+		f.getUsers();
+		f.postUser("LöschenUser", "LöschenUser", 18);
+		f.getUsers();
+		f.delUser(3);
+		f.getUsers();
+		f.getUser(2);
+		f.putUser(2, "EditedUser", "EditedUser", 21);
+		f.getUsers();
 
 	}
 	
